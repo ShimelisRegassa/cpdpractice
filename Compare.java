@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Compare {
+    public static void main(String[] args) {
+       Scanner scanner=new Scanner(System.in);
+      String first=scanner.nextLine();
+      String second=scanner.nextLine();
+      if(first.length()==second.length()){
+        first=first.toLowerCase();
+        second=second.toLowerCase();
+        int result=first.compareTo(second);
+        if(result>0){
+            System.out.println(1);
+        }
+        else if(result<0){
+            System.out.println(-1);
+        }
+        else{
+            System.out.println(0);
+        }
+      }
+    scanner.close();
+    }
+}
